@@ -1,0 +1,105 @@
+/* Full page layout */
+.home-container {
+  min-height: calc(100vh - 64px); /* header height adjustment */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f5f7fa, #e4ebf5);
+  text-align: center;
+}
+
+/* Main heading */
+.home-container h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #1976d2;
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.home-container p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+/* Features section */
+.features {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.features h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  font-size: 16px;
+  padding: 8px 0;
+  color: #444;
+}
+
+/* Action buttons */
+.actions {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.actions button {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #1976d2;
+  color: white;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.actions button:hover {
+  background-color: #125aa0;
+  transform: translateY(-2px);
+}
+
+/* Concepts section */
+.concepts {
+  margin-top: 20px;
+}
+
+.concepts h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.concepts ul {
+  list-style: none;
+  padding: 0;
+}
+
+.concepts li {
+  font-size: 15px;
+  color: #555;
+  padding: 4px 0;
+}
+
+/* Quote */
+.quote {
+  margin-top: 30px;
+  font-style: italic;
+  color: #666;
+}

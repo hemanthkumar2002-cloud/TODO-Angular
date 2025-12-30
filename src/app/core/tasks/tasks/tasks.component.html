@@ -1,0 +1,19 @@
+<div class="todo-container">
+  <h2>My Todo List</h2>
+
+  <form [formGroup]="todoForm" (ngSubmit)="addTodo()" class="todo-form">
+    <input type="text" formControlName="task" placeholder="Enter your task">
+    <button type="submit" [disabled]="todoForm.invalid">Add Task</button>
+  </form>
+
+  <div *ngIf="todoForm.get('task')?.invalid && todoForm.get('task')?.touched" class="error">
+    Task is required and must be at least 3 characters.
+  </div>
+
+  <ul class="todo-list">
+    <li *ngFor="let todo of todos; let i = index" [class.done]="todo.done">
+      <span (click)="toggleDone(i)">{{ todo.task }}</span>
+      <button (click)="deleteTodo(i)">Delete</button>
+    </li>
+  </ul>
+</div>

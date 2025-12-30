@@ -1,0 +1,35 @@
+.app-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 12px 20px;
+background-color: #1976d2;
+color: white;
+}
+
+.app-header {
+  border: 5px solid red !important;
+}
+
+
+
+.logo {
+font-size: 20px;
+font-weight: bold;
+}
+
+.nav-links{
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+  color: white;          
+  text-decoration: none;
+  font-size: 16px;
+
+  cursor: pointer;
+}
+.nav-links a:hover{
+    text-decoration: underline;
+}
